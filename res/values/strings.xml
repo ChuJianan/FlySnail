@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">星星伙伴</string>
+    <string name="app_teacher">星星伙伴</string>
+    <string name="app_gridbutton">星星伙伴</string>
+    <string name="app_game">星星伙伴</string>
+    <string name="app_contactus">联系我们</string>
+    <string name="app_instruction">软件说明</string>
+    <string name="action_settings"></string>
+    <string name="btn_text1">认知教学板块</string>
+    <string name="btn_text2">点连线板块</string>
+    <string name="btn_text3">进入图库</string>
+    <string name="btn_text4">软件说明</string>
+    <string name="btn_text5">联系我们</string>
+    <string name="description1">imageview1</string>
+    <string name="description2">imageview2</string>
+    
+    <string name="contact">联系我们版面</string>
+    <string name="blank">这个空白的地方准备弄个蜗牛的动态图</string>
+    <string name="back">返回</string>
+    <string name="contactwords">这个页面主要填写“圣之爱”的相关信息。。。</string>
+    <string name="softwarewords">这个页面主要填软件的相关的说明信息。。。</string>
+    <string name="linewords">点连线的游戏部分还在制作当中，3月25号差不多，因此在展示高分辨率图片的时候，最好先将图片进行压缩。压缩后的图片大小应该和用来展示它的控件大小相近，在一个很小的ImageView上显示一张超大的图片不会带来任何视觉上的好处，但却会占用我们相当多宝贵的内存，而且在性能上还可能会带来负面影响。下面我们就来看一看，如何对一张大图片进行适当的压缩，让它能够以最佳大小显示的同时，还能防止OOM的出现。</string>
+    
+    <string name="bt1">交通工具BitmapFactory这个类提供了多个解析方法(decodeByteArray, decodeFile, decodeResource等)用于创建Bitmap对象，我们应该根据图片的来源选择合适的方法。比如SD卡中的图片可以使用decodeFile方法，网络上的图片可以使用decodeStream方法，资源文件中的图片可以使用decodeResource方法。这些方法会尝试为已经构建的bitmap分配内存，这时就会很容易导致OOM出现。为此每一种解析方法都提供了一个可选的BitmapFactory.Options参数，将这个参数的inJustDecodeBounds属性设置为true就可以让解析方法禁止为bitmap分配内存，返回值也不再是一个Bitmap对象，而是null。虽然Bitmap是null了，但是BitmapFactory.Options的outWidth、outHeight和outMimeType属性都会被赋值。这个技巧让我们可以在加载图片之前就获取到图片的长宽值和MIME类型，从而根据情况对图片进行压缩。如下代码所示：
+完全加载到内存中显然是不值得的。
+那我们怎样才能对图片进行压缩呢？通过设置BitmapFactory.Options中inSampleSize的值就可以实现。比如我们有一张2048*1536像素的图片，将inSampleSize的值设置为4，就可以把这张图片压缩成512*384像素。原本加载这张图片需要占用13M的内存，压缩后就只需要占用0.75M了(假设图片是ARGB_8888类型，即每个像素点占用4个字节)。下面的方法可以根据传入的宽和高，计算出合适的inSampleSize值：
+[java] view plaincopy</string>
+    <string name="bt2">标识</string>
+    <string name="bt3">人物</string>
+    <string name="bt4">职业</string>
+    <string name="bt5">颜色</string>
+    <string name="bt6">植物</string>
+    <string name="bt7">动物</string>
+    <string name="bt8">乐器</string>
+    
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:orientation="vertical"   
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    >  
+<RelativeLayout  
+    android:id="@+id/myView"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"   
+    >  
+<cn.anycall.ju.ScrollLayout  
+  xmlns:android="http://schemas.android.com/apk/res/android"  
+  android:id="@+id/ScrollLayoutTest"  
+  android:layout_width="fill_parent"  
+  android:layout_height="fill_parent"  android:background="#8f00000f" >  
+</cn.anycall.ju.ScrollLayout>  
+  
+<cn.anycall.ju.PageControlView   
+                android:id="@+id/pageControl"  
+                android:layout_width="fill_parent"   
+                android:layout_height="fill_parent"  
+                android:background="#8f00000f"   
+                android:layout_alignParentBottom="true"  
+                android:gravity="center"/>  
+</RelativeLayout>  
+</LinearLayout>  
